@@ -1,4 +1,4 @@
-# case_converter
+# Music Time
 
 ## Project setup
 ```
