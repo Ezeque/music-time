@@ -5,7 +5,7 @@
         <img src="@/assets/musicTime.png" style="width: 200px" />
         <!-- <search-bar class="mb-2" style="z-index: 1" /> -->
         <div class="flex align-start w-full md:w-auto">
-          <close-icon @click="closeVideo" v-if="idVideo != null"/><youtube-video class="video h-1/4 ml-2"/>
+          <close-icon @click="closeVideo" v-if="idVideo != null"/><youtube-video class="video h-1/4 ml-0 md:ml-2"/>
         </div>
       </div>
       <video-grid id="video-div" :class="idVideo == null ? 'h-3/4' : 'h-1/4'" />
@@ -58,5 +58,6 @@ mounted(){
 
 #video-div{
   transition: all 0.5s ease;
+  z-index: -1;
 }
 </style>
