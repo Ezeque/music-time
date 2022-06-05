@@ -1,8 +1,9 @@
 <template>
   <div class="flex justify-around w-full">
-    <iframe
+    <iframe 
+    id="video"
     width= "500"
-    height="300"
+    :height="idVideo == null? 0 : 350"
     :src="`https://www.youtube.com/embed/${idVideo}`"
     title="YouTube video player" 
     frameborder="0" 
@@ -21,3 +22,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  #video{
+    transition: all 0.5s ease;
+  }
+</style>
