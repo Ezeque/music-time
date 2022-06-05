@@ -4,11 +4,11 @@
       <div class="flex flex-col justify-between items-center h-1/4 w-full">
         <img src="@/assets/musicTime.png" style="width: 200px" />
         <!-- <search-bar class="mb-2" style="z-index: 1" /> -->
-        <div class="flex align-start w-full md:w-auto">
+        <div id="video" class="flex align-start w-full md:w-auto">
           <close-icon @click="closeVideo" v-if="idVideo != null"/><youtube-video class="video h-1/4 ml-0 md:ml-2"/>
         </div>
       </div>
-      <video-grid id="video-div" :class="idVideo == null ? 'h-3/4' : 'h-1/4'" />
+      <video-grid id="videos-div" :class="idVideo == null ? 'h-3/4' : 'h-1/4'" />
     </div>
   </screen-background>
 </template>
@@ -56,8 +56,12 @@ mounted(){
   color: #2c3e50;
 }
 
-#video-div{
+#videos-div{
   transition: all 0.5s ease;
-  z-index: -1;
+  z-index: 1;
+}
+
+#video{
+  z-index: 0;
 }
 </style>
