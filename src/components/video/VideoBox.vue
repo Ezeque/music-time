@@ -24,7 +24,8 @@ export default {
     defineBg(img) {
       return { 
           "background-image": `url(${img})`, 
-          "background-size": `cover`
+          "background-size": `cover`,
+          "background-position": `center`
           };
     },
 

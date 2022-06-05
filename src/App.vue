@@ -3,12 +3,12 @@
     <div class="h-auto w-full flex flex-col justify-between items-center">
       <div class="flex flex-col justify-between items-center h-1/4 w-full">
         <img src="@/assets/musicTime.png" style="width: 200px" />
-        <search-bar class="mb-2" style="z-index: 1" />
+        <!-- <search-bar class="mb-2" style="z-index: 1" /> -->
         <div class="flex align-start" v-if="idVideo != null">
           <close-icon @click="closeVideo"/><youtube-video class="video h-1/4 ml-2"/>
         </div>
       </div>
-      <video-grid :class="idVideo == null ? 'h-1/2' : 'h-1/4'" />
+      <video-grid :class="idVideo == null ? 'h-3/4' : 'h-1/4'" />
     </div>
   </screen-background>
 </template>
@@ -17,7 +17,7 @@
 </style>
 
 <script>
-import SearchBar from "./components/utils/SearchBar.vue";
+/* import SearchBar from "./components/utils/SearchBar.vue"; */
 import VideoGrid from "./components/video/VideoGrid.vue";
 import ScreenBackground from "./components/background/ScreenBackground.vue";
 import YoutubeVideo from "./components/video/YoutubeVideo.vue";
@@ -33,12 +33,15 @@ export default {
     return { idVideo, closeVideo }
   },
   components: {
-    SearchBar,
+    /* SearchBar, */
     VideoGrid,
     ScreenBackground,
     YoutubeVideo,
     CloseIcon
 },
+mounted(){
+  document.title = "Music Time"
+}
 };
 </script>
 

@@ -32,13 +32,31 @@ export const VideoInfo = ref([
         nome: "Adventure Time Opening",
         descricao: "The show's oppening",
         bg: "https://i.ytimg.com/vi/kMDaAcfCYow/maxresdefault.jpg",
-        id: "7Ing1lOzmGA"
+        id: "kMDaAcfCYow"
     },
     {
         nome: "Come Along With Me",
         descricao: "The show's ending",
         bg: "https://i.ytimg.com/vi/QiHQ7gIeSbY/maxresdefault.jpg",
         id: "qEJ4spdiTxw"
+    },
+    {
+        nome: "Lay My Head Down Slow",
+        descricao: "\"Lay My Head Down Slow\" is an auto-tuned song sung by Finn in the episode \"Freak City.\" It was sung after a deep depression brought on by his realization of being stuck as a giant foot forever in a cave filled with other random body parts of people transformed by the Magic Man.",
+        bg: "https://pm1.narvii.com/6013/b6a91de2c7d74e27fd8d975649114c0a0e329bfa_hq.jpg",
+        id: "bhX78K2uR_g"
+    },
+    {
+        nome: "Billy's Theme",
+        descricao: "\"Billy's Theme Song\" is the song performed by storyboard artist Adam Muto that plays when Finn and Jake find the sword of their hero",
+        bg: "https://i.ytimg.com/vi/TbMiU2CjN30/maxresdefault.jpg",
+        id: "auQCYHbuaQY"
+    },
+    {
+        nome: "Friends Don't Fight",
+        descricao: "\"Friends Don't Fight\" is a song performed by BMO in the episode \"Video Makers.\" This song is sung in order for Finn and Jake to put aside their differences in movie choice and remember their friendship.",
+        bg: "https://i.ytimg.com/vi/qFzIx6LQDDA/maxresdefault.jpg",
+        id: "bBUF_AVKOUU"
     },
     
 ])
