@@ -22,6 +22,7 @@ import VideoGrid from "./components/video/VideoGrid.vue";
 import ScreenBackground from "./components/background/ScreenBackground.vue";
 import YoutubeVideo from "./components/video/YoutubeVideo.vue";
 import { idVideo } from "./components/video/services/useVideoActions";
+import { bgImg } from "./components/background/services/useBackgroundImg";
 import CloseIcon from "@/components/utils/CloseIcon.vue"
 
 export default {
@@ -29,6 +30,7 @@ export default {
   setup() {
     const closeVideo = () => {
       idVideo.value = null
+      bgImg.value = require('@/assets/main_bg.jpg')
     }
     return { idVideo, closeVideo }
   },

@@ -14,7 +14,7 @@
 import VideoBox from "./VideoBox.vue";
 import { VideoInfo } from "@/assets/videos.js";
 import { updateVideo, idVideo } from "./services/useVideoActions";
-import { updateCharacters } from "../background/services/useBackgroundImg";
+import { updateBg } from "../background/services/useBackgroundImg";
 
 export default {
   name: "VideoGrid",
@@ -22,12 +22,12 @@ export default {
     VideoBox,
   },
   setup() {
-    return {updateCharacters, updateVideo, VideoInfo, idVideo }
+    return {updateBg, updateVideo, VideoInfo, idVideo }
   },
   methods: {
     handleclick(video){
       updateVideo(video.id)
-      updateCharacters(video.participantes)
+      updateBg(video.songBg)
     }
   }
 };

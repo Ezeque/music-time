@@ -1,11 +1,12 @@
 import { ref } from 'vue'
 
-export const bgCharacters = ref([])
+export const bgImg = ref(require("@/assets/main_bg.jpg"))
 
-export const updateCharacters = (characters) =>{
-    bgCharacters.value = characters
+export const updateBg = (img) =>{
+    bgImg.value = img
 }
 
 export default {
-    bgCharacters
+    bgImg,
+    updateBg
 }

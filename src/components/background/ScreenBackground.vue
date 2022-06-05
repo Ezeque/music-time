@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen w-screen screen">
+  <div class="flex h-screen w-screen screen" :style="background">
     <!-- WILL LOAD BACKGROUND CHARACTERS -->
     <!-- <character-card style="z-index:0" v-for="character in bgCharacters" :key="character.name" :img="character.img"/> -->
     <slot></slot>
@@ -7,10 +7,6 @@
 </template>
 
 <style scoped>
-.screen {
-  background-image: url("@/assets/main_bg.jpg");
-  background-size: cover;
-}
 </style>
 
 <script>
@@ -21,6 +17,22 @@ export default {
   setup() {
     return bgCharacters;
   },
+  computed: {
+    background() {
+      return {
+        backgroundImage: `url(${this.bgImg})`,
+        backgroundSize: 'cover',
+        backgroudPosition: 'center',
+      }
+    }
+  },
   components: { /* CharacterCard */ }
 };
 </script>
+
+<style scoped>
+.screen {
+  -webkit-transition: background-image 0.5s ease;
+  transition: background-image 0.5s ease;
+}
+</style>
