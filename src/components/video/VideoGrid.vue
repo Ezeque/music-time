@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     handleclick(video){
-      updateVideo(video.id)
+      updateVideo(video)
       updateBg(video.songBg)
     }
   }
@@ -39,15 +39,20 @@ export default {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #af52bf;
+  background: #b0171f;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9035a1;
+  background: #941017;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
+}
+
+@font-face {
+  font-family: adventureFont;
+  src: url('@/assets/fonts/Pieces of Eight.ttf');
 }
 </style>

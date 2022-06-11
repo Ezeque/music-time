@@ -4,8 +4,12 @@
       <div class="flex flex-col justify-between items-center h-1/4 w-full">
         <img src="@/assets/musicTime.png" style="width: 200px" />
         <!-- <search-bar class="mb-2" style="z-index: 1" /> -->
-        <div id="video" class="flex align-start w-full md:w-auto">
-          <close-icon @click="closeVideo" v-if="idVideo != null"/><youtube-video class="video h-1/4 ml-0 md:ml-2"/>
+        <div id="video" class="flex align-center justify-end w-full md:w-3/4 h-auto">
+          <div class="flex align-center justify-end">
+            <close-icon @click="closeVideo" v-if="idVideo"/>
+            <youtube-video class="video h-80 ml-0 md:ml-2"/>
+          </div>
+          <lyrics-card class="ml-2 h-auto lyrics-card"/>
         </div>
       </div>
       <video-grid id="videos-div" :class="idVideo == null ? 'h-3/4' : 'h-1/4'" />
@@ -24,6 +28,7 @@ import YoutubeVideo from "./components/video/YoutubeVideo.vue";
 import { idVideo } from "./components/video/services/useVideoActions";
 import { bgImg } from "./components/background/services/useBackgroundImg";
 import CloseIcon from "@/components/utils/CloseIcon.vue"
+import LyricsCard from "./components/utils/lyrics/LyricsCard.vue";
 
 export default {
   name: "App",
@@ -39,11 +44,12 @@ export default {
     VideoGrid,
     ScreenBackground,
     YoutubeVideo,
-    CloseIcon
-},
-mounted(){
-  document.title = "Music Time"
-}
+    CloseIcon,
+    LyricsCard
+  },
+  mounted() {
+    document.title = "Music Time"
+  }
 };
 </script>
 
@@ -56,12 +62,12 @@ mounted(){
   color: #2c3e50;
 }
 
-#videos-div{
+#videos-div {
   transition: all 0.5s ease;
   z-index: 1;
 }
 
-#video{
+#video {
   z-index: 0;
 }
 </style>
