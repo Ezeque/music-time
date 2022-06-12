@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-around w-full">
+  <div class="flex justify-around w-full border-color-red">
     <iframe 
     id="video"
     width= "500"

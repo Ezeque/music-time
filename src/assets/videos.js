@@ -205,21 +205,38 @@ export const VideoInfo = ref([
         songBg: require("@/assets/images/Billy.png"),
         letra: `Who's the greatest warrior ever?
         A hero of renown!
+
         Who slayed an Evil Ocean? Who cast the Lich King down?
+
         Billy!
+
         And that time the evil Fire Count, captured a damsel fair
         Who saved her with such bravery?
         She offered him her hair
+
         Billy!
+
         Also, he fought a bear!
-        Billy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`
+        Billy!!!!!!`
     },
     {
         nome: "Friends Don't Fight",
         descricao: "\"Friends Don't Fight\" is a song performed by BMO in the episode \"Video Makers.\" This song is sung in order for Finn and Jake to put aside their differences in movie choice and remember their friendship.",
         bg: "https://i.ytimg.com/vi/qFzIx6LQDDA/maxresdefault.jpg",
         id: "bBUF_AVKOUU",
-        songBg: require("@/assets/images/friends_song.png")
+        songBg: require("@/assets/images/friends_song.png"),
+        letra: `Finn, why are you fighting with your friend?
+        Jake, you know this can't be the end
+        Romance or action, does not matter
+        Hurting your friends will make you sadder
+        
+        Guys, you know you're much more than this
+        You two, please stop or you'll undo
+        All that you've been through
+        Ooooooooo...
+
+        Just hug and it's agreed:
+        Your love will not delete`
     },
     
 ])

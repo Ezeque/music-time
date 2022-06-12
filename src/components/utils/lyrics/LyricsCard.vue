@@ -1,5 +1,5 @@
 <template>
-    <div class="w-1/4 h-auto max-h-full flex pt-1 px-6 overflow-auto justify-center flex-wrap" 
+    <div class="w-1/3 h-auto max-h-full flex pt-1 px-6 overflow-auto justify-center flex-wrap color-border-yellow" 
         id="lyrics-card"
         :style="cardStyle">
         <div v-if="currentVideo">
@@ -39,7 +39,6 @@ export default {
     font-family: adventureFont;
 }
 #lyrics-card {
-    width: 30vw;
     border-radius: 10px;
     transition: all 0.5s ease;
 }
